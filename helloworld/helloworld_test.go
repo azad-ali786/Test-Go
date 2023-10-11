@@ -18,4 +18,11 @@ func TestHello(t *testing.T) {
 		if got != want {
 			t.Errorf("got %q want %q", got, want)
 		}
+
+		got1 := Hello("")
+		want1 := "Hello, World"
+	
+		if got != want {
+			t.Errorf("got %q want %q", got1, want1)
+		}
 }

@@ -1,11 +1,10 @@
 package main
 
-import "fmt"
+const hello = "Hello, "
 
 func Hello(name string) string {
-	return "Hello, " + name;
-}
-
-func main() {
-	fmt.Println(Hello("World"))
+	if name == "" {
+		name = "World"
+	}
+	return hello + name
 }
